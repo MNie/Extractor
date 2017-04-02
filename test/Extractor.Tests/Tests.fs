@@ -17,7 +17,7 @@ let tests =
       let result = (input, dict []) |> valuesProvider.Provide
       Expect.equal result input "result from values provider should be equal to 45"
 
-    testCase "value with single" <| fun _ ->
+    testCase "value with single dependency" <| fun _ ->
       let input = baseFunctionName |> inputCreator
       let properties = dict [(baseFunctionName, value)]
       let result = (input, properties) |> valuesProvider.Provide
