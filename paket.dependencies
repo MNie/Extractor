@@ -1,0 +1,5 @@
+source https://www.nuget.org/api/v2
+nuget FSharp.Core
+nuget FSharp.Text.RegexProvider
+nuget Expecto
+nuget FAKE
